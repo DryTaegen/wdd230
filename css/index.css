@@ -1,0 +1,49 @@
+:root {
+    --background:#626868;
+    --main-color: #273C2C;
+    --accent-color: #939196;
+    --heading-font: "Baron", "Tahoma", sans-serif;
+    --paragraph-font: "Garmond", "Times New Roman", serif;
+}
+body {
+    background-color: var(--background);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    border-radius: 25px;
+    display:flex;
+    flex-direction: row;
+    background-color: var(--main-color);
+    padding: 15px;
+    margin: 10px;
+}
+header img {
+    max-width:120px;
+}
+
+body ul {
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: var(--main-color);
+    padding: 10px;
+}
+li a {
+    color: var(--accent-color);
+}
+footer {
+    border-radius: 25px;
+    background-color: var(--main-color);
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#lastTouch {
+    color: var(--accent-color);
+}
