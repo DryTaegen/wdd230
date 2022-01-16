@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Josefin+Sans&display=swap');
+
+:root {
+    --background:#626868;
+    --main-color: #273C2C;
+    --accent-color: #e0e0e0;
+    --text-color: rgb(116, 196, 126);
+    --heading-font:  "DM Sans", sans-serif;
+    --paragraph-font:  "Josefin sans", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    max-width: 100%;
+    align-items: center;
+}
+
+main {
+
+    display: grid;
+    align-items: center;
+}
+header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-family: var(--heading-font);
+    font-size: larger;
+    
+}
+ h1, h2, h3, h4, h5 {
+     font-family: var(--heading-font);
+     font-size: larger;
+ }
+.designArticle {
+    margin: auto;
+    max-width: 90%;
+    border-radius: 25px;
+    padding: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.designArticle img{
+    max-height: 60em;
+    max-width: 90%;
+}
+a {
+    color:#e0e0e0
+}
+p {
+    text-align:center;
+    font-family: var(--paragraph-font);
+    font-size: larger;
+}
+footer {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    font-family: var(--paragraph-font);
+}
+
+#lastTouch {
+    color: var(--accent-color);
+}
+
+@media (min-width: 32.5em) {
+    main {
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .designArticle {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 64em) {
+    main {
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .designArticle {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+}
+
+@media (min-width: 80em) {
+    main {
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+}

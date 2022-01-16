@@ -1,7 +1,8 @@
 :root {
     --background:#626868;
     --main-color: #273C2C;
-    --accent-color: #939196;
+    --accent-color: #e0e0e0;
+    --text-color: rgb(116, 196, 126);
     --heading-font: "Baron", "Tahoma", sans-serif;
     --paragraph-font: "Garmond", "Times New Roman", serif;
 }
@@ -19,9 +20,11 @@ header {
     background-color: var(--main-color);
     padding: 15px;
     margin: 10px;
+    color: var(--text-color);
 }
 header img {
     max-width:120px;
+    margin: 10px;
 }
 
 body ul {
@@ -35,13 +38,14 @@ li a {
     color: var(--accent-color);
 }
 footer {
+    color: var(--text-color);
     border-radius: 25px;
     background-color: var(--main-color);
     padding: 15px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 #lastTouch {
