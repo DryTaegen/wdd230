@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Quicksand&family=Slabo+27px&display=swap');
+
+:root {
+
+    --mainColor: #043764;
+    --secondColor: #557ca9;
+    --accentColor: #c9d7ec;
+
+    --headerFont: 'Outfit', sans-serif;
+    --paragraphFont: 'Quicksand', sans-serif;
+    --titleFont: 'Slabo 27px', serif;    
+}
+
+body {
+    background-color: white;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    background-color: var(--accentColor);
+    max-width: 70%;
+    min-width: 70%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--secondColor);
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+
+header img{
+    max-width: 25%;
+}
+
+header h1 {
+    font-family: var(--titleFont);
+}
+
+nav ul li {
+    text-decoration: none;    
+    flex: 1 1 auto;
+
+}
+
+nav ul li a {
+    display: block;
+    background-color: var(--mainColor);
+	color: var(--accentColor);
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondColor);
+    color: var(--accentColor);
+}
+
+.active {
+    background-color: var(--accentColor);
+    color: var(--mainColor);  
+}
+
+h2, h3, h4, h5 {
+font-family: var(--headerFont);
+align-self: flex-start;
+padding-left: 5%;
+}
+
+h2 {
+    align-self: center;
+}
+
+p {
+font-family: var(--paragraphFont);
+max-width: 60%;
+}
+
+#colorsMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#colorsBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33.33333333333%;
+}
+
+.colorElem {
+    min-width: 100%;
+    background-color: var(--mainColor);
+
+}
+
+#color1 {
+    border-style: double;
+    border-right: 1em;
+    border-left: 1em;
+    border-bottom: 1em;
+    border-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 5%;
+    background: var(--mainColor)
+}
+#color2 {
+    border-style: double;
+    border-right: 1em;
+    border-left: 1em;
+    border-bottom: 1em;
+    border-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 5%;
+    background: var(--secondColor)
+}
+#color3 {
+    border-style: double;
+    border-right: 1em;
+    border-left: 1em;
+    border-bottom: 1em;
+    border-color: black;
+    margin: 0;
+    padding: 5%;
+    background: var(--accentColor)
+}
+
+#typeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#typeBox {
+    color: var(--accentColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33.33333333333%;
+}
+
+.typeElem {
+
+    min-width: 100%;
+    background-color: var(--mainColor);
+
+}
+
+#type1 {
+    color: var(--mainColor);
+    font-family: var(--titleFont);
+    border-style: double;
+    border-color: var(--accentColor);
+    margin: 0;
+    padding: 5%;
+    background: var(--secondColor)
+}
+#type2 {
+    color: var(--mainColor);
+    border-style: double;
+    border-color: var(--accentColor);
+    margin: 0;
+    padding: 5%;
+    background: var(--secondColor)
+}
+#type3 {
+    color: var(--mainColor);
+    font-family: var(--paragraphFont);
+    border-style: double;
+    border-color: var(--accentColor);
+    margin: 0;
+    padding: 5%;
+    background: var(--secondColor)
+}
+
+nav ul {
+    min-width: 80%;
+    background-color:#043764;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    box-shadow: 0 0 30px rgb(20, 40, 63);
+    text-decoration: none;
+    padding: 1%;
+    margin-right: 3%;
+}
+
+@media (max-width: 64em) {
+    nav ul {
+        min-width: 80%;
+        background-color:#043764;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 0 30px rgb(20, 40, 63);
+        text-decoration: none;
+        padding: 1%;
+        margin-right: 3%;
+    }
+}
