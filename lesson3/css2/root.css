@@ -183,30 +183,3 @@ max-width: 60%;
     background: var(--secondColor)
 }
 
-nav ul {
-    min-width: 80%;
-    background-color:#043764;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    box-shadow: 0 0 30px rgb(20, 40, 63);
-    text-decoration: none;
-    padding: 1%;
-    margin-right: 3%;
-}
-
-@media (max-width: 64em) {
-    nav ul {
-        min-width: 80%;
-        background-color:#043764;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        box-shadow: 0 0 30px rgb(20, 40, 63);
-        text-decoration: none;
-        padding: 1%;
-        margin-right: 3%;
-    }
-}
