@@ -8,53 +8,71 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
     
 </head>
 
 <body>
 
     <header>
-        <img src="images/Commerse.png" alt="Custom logo for the Chamber of Commerce for Cottonwood Heights">
         <div id=headerDiv>
-            <h1>Cottonwood Heights Chamber of Commerce</h1>
-            <nav>
-                <ul class="socials">
-                    <li><a href="facebook.com"><img src="images/facebook.png"></a></li>
-                    <li><a href="instagram.com"><img src="images/instagram.png"></a></li>
+            <img class="logo" src="images/Commerse.png" alt="Custom logo for the Chamber of Commerce for Cottonwood Heights">
+            <div id="headerContent">
+                <div id="title">
+                    <h1>Cottonwood Heights</h1>
+                    <h4>Chamber of commerce</h4>
+                </div>
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+                        <li><a href="https://www.instagram.com/?hl=en"><img src="images/instagram.png"></a></li>
 
-                </ul>
-                <ul class="navbar">
-                    <li><a class=smallMenu href="#">Menu</a></li>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-            <div id="headerDate"></div>
+                    </ul>
+            
+
+            </div>
+              
         </div>
+        <nav>
+            <ul id="navbar" class="minimized">
+                <li><a id=smallMenu href="#">Menu</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="headerDate"></div>
     </header>
 
     <main>
-        <div class="contentCard">Hero with site name and call to action</div>
-        <div class="contentCard">Event</div>
-        <div class="contentCard">Weather</div>
-        <div class="contentCard">News release</div>
-        <div class="contentCard">Spotlights </div>
-        <div class="contentCard">Join</div>
+        <div id="heroCard" class="contentCard">Hero with site name and call to action</div>
+        <div id="eventCard" class="contentCard">Event</div>
+        <div id="weatherCard" class="contentCard">Weather</div>
+        <div id="newsCard" class="contentCard">News release</div>
+        <div id="spotlightCard" class="contentCard">
+            <div class="spotlight">spotlight 1</div>
+            <div class="spotlight">spotlight 2</div>
+        </div>
+        <div id="joinCard" class="contentCard">Join</div>
     </main>
 
     <footer>
-        <img src="images/Commerse.png" alt="Custom logo for the Chamber of Commerce for Cottonwood Heights">
-        <h4>Cottonwood Heights Chamber of Commerce</h4>
-        <p>2277 Bengal Blvd, Cottonwood Heights, UT 84121</p>
-        <p>info@chcc.gov</p>
-        <p>(801)-944-7000</p>
-        <a href="#">Click for location on map</a>
+        <div class="upperDiv">
+            <img class="logo" src="images/Commerse.png" alt="Custom logo for the Chamber of Commerce for Cottonwood Heights">
+            <div id="footText1">
+                <h4>Cottonwood Heights Chamber of Commerce</h4>
+                <p>2277 Bengal Blvd, Cottonwood Heights, UT 84121</p>
+            </div>
+            <div id="footText2">
+                <p>info@chcc.gov</p>
+                <p>(801)-944-7000</p>
+                <a href="#">Click for location on map</a>
+            </div>
+        </div>
         <div class="subDiv">
-            <p id=footerText> &copy; <span id=copyWright></span> | Taemour Djahanbani | WDD 230 Project</p>
-            <p id=updateText> last Updated: <span id=lastTouch></span></p>  
+            <p id=footerText> &copy; <span id=copyWright></span> | Taemour Djahanbani | WDD 230 Project | </p>
+            <p id=updateText>  Last Updated: <span id=lastTouch></span></p>  
         </div>
     </footer>
 
