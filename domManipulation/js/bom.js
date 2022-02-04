@@ -12,7 +12,7 @@ button.addEventListener("click", function(){
     delButton.className = "delButton";
     newItem.innerHTML = input.value;
     delButton.addEventListener("click", function(){
-        delButton.parentNode.remove(1);
+        delButton.parentNode.remove();
         input.focus();
     });
     newItem.appendChild(delButton);
