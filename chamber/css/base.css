@@ -3,7 +3,7 @@
 :root {
 
     --mainColor: #043764;
-    --secondColor: #557ca9;
+    --secondColor: #2a5280;
     --accentColor: #c9d7ec;
 
     --headerFont: 'Outfit', sans-serif;
@@ -77,7 +77,7 @@ main {
     border-radius: 25px;
     opacity: .8;
     transition: opacity 0.3s;
-    transition: background-color 0.3;
+    transition: background-color 0.3s;
 }
 
 #heroInvite:hover{
@@ -123,7 +123,7 @@ header {
 }
 
 .boarderTop {
-    border: wite;
+    border: white;
     border-top: 1px solid;
 }
 
