@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/normalize.css">
-    
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
     
 </head>
 
@@ -35,27 +37,61 @@
         </div>
         <nav>
             <ul id="navbar" class="minimized">
-                <li><a id=smallMenu href="#">Menu</a></li>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id=smallMenu href="#">☰</a></li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <div id="headerDate"></div>
     </header>
 
     <main>
-        <div id="heroCard" class="contentCard">Hero with site name and call to action</div>
-        <div id="eventCard" class="contentCard">Event</div>
-        <div id="weatherCard" class="contentCard">Weather</div>
-        <div id="newsCard" class="contentCard">News release</div>
-        <div id="spotlightCard" class="contentCard">
-            <div class="spotlight">spotlight 1</div>
-            <div class="spotlight">spotlight 2</div>
+        <div id="datedBanner"><h1>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h1></div>
+        <div id="mainDiv">
+            <div id="heroCard" class="contentCard">
+                <h2 id="heroHeader">Welcome to Cottonwood Heights</h2>
+                <img src="images/saltLakeHero.jpg" alt="arial view of SLC">
+                <a id="heroInvite">Join the Chamber</a>
+            </div>
+            <div id="eventCard" class="contentCard"><h2>Event</h2>
+                <div id="eventContent">
+                    <img src="images/butlerville.jpg" alt="butlerville days 2022">
+                    <p>Butlerville days! </p>
+                    <p>sign up for vender sponsors.</p>
+
+                </div>
+            </div>
+            <div id="weatherCard" class="contentCard"><h2>Weather</h2>
+                <div id="weatherContent">
+                   <p>19° F</p>
+                   <p>Partly cloudy</p>
+                   <p>Winds: NE 5 to 10 mph</p> 
+                </div>
+                
+            </div>
+            <div id="newsCard" class="contentCard"><h2>News release</h2>
+                <div id="newsContent">
+                    <h3>New mayor spotlight</h3>
+                    <p>New Mayor Mike Weichers shares a few thoughts</p>
+                    <img src="images/mikeweichers.png" alt="New mayor of Cottonwood Heights">
+                    <p>"months now since the election, and I am still extremely humbled and grateful I have the opportunity to be the mayor of Cottonwood Heights. There is much to do, and I understand the responsibility and trust I have been handed. I feel grateful for the opportunity to be able to represent our great city in many
+                        different capacities. I also look forward to continuing to meet as many of our residents as possible over the next four years and to working alongside many of you to solve
+                        problems together. While campaigning over the past year, a common frustration from our citizens was a lack of awareness of city council agenda items that can directly affect their neighborhoods. I encourage you to sign up for city meeting email notifications to receive full agendas in advance so you know what issues and items will be discussed." 
+                    </p>
+                </div>
+            </div>
+            <div id="spotlightCard" class="contentCard">
+                <div class="spotlight"><h2>spotlight 1</h2></div>
+                <div class="spotlight"><h2>spotlight 2</h2></div>
+            </div>
+            <div id="joinCard" class="contentCard">
+                <a class="joinButton">Join Today!</a>
+                <p>Discover how to join the chamber and how it will benefit you and your organization!</p>
+            </div>
         </div>
-        <div id="joinCard" class="contentCard">Join</div>
     </main>
 
     <footer>
@@ -72,7 +108,7 @@
             </div>
         </div>
         <div class="subDiv">
-            <p id=footerText> &copy; <span id=copyWright></span> | Taemour Djahanbani | WDD 230 Project | </p>
+            <p id=footerText> &copy; <span id=copyWright></span> | Taemour Djahanbani | WDD 230 Project | Chamber of Commerce project </p>
             <p id=updateText>  Last Updated: <span id=lastTouch></span></p>  
         </div>
     </footer>

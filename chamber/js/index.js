@@ -37,4 +37,24 @@ window.onresize = () => {
     else setSmall();
 }
 
+function displayBanner() {
+    const banner= document.getElementById("datedBanner");
+    banner.classList.remove("noDateBanner");
+    banner.classList.add("dateBanner");
+}
+
+today = currentDate.getDay();
+console.log(today)
+if(today == 1) {
+    displayBanner();
+}
+else if(today == 2) {
+    displayBanner();
+}
+else {
+    const banner= document.getElementById("datedBanner");
+    banner.classList.remove("dateBanner");
+    banner.classList.add("noDateBanner");
+}
+
 
