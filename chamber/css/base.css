@@ -45,7 +45,9 @@ main {
     background-color: var(--mainColor);
 }
 #heroCard {
+    
     position: relative;
+    max-height: 1700px;
 }
 #heroCard img {
     width: 100%;
@@ -53,6 +55,7 @@ main {
     overflow: hidden;
     object-fit: cover;
     min-height: 10em;
+
 }
 
 #heroHeader {
@@ -64,6 +67,7 @@ main {
 }
 
 #heroInvite {
+    text-decoration: none;
     position: absolute;
     background-color: var(--accentColor);
     color:rgb(20, 40, 63);
@@ -87,17 +91,28 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: fit-content;
 }
 
 .spotlight {
+    display: flex;
+    flex-direction:column;
     background-color: var(--mainColor);
     min-width: 40%;
-    height: 8em;
+    height: fit-content;
     margin: 1em;
     text-align: center;
     color: white;
 }
 
+.spotlight img {
+    align-self: center;
+    width: 80%;
+}
+.spotlight p {
+
+    align-self: center;
+}
 header {
     background-color: var(--secondColor);
     width: 100%;
@@ -105,6 +120,11 @@ header {
     flex-direction: column;
     margin: 0 auto;
 
+}
+
+.boarderTop {
+    border: wite;
+    border-top: 1px solid;
 }
 
 #headerDiv {
@@ -215,6 +235,8 @@ h2 {
 p {
 font-family: var(--paragraphFont);
 max-width: 60%;
+color: white;
+font-size: 115%;
 }
 
 
@@ -306,4 +328,79 @@ footer img {
     padding: 2em;
     text-align: center;
     color:aliceblue;
+}
+#eventCard {
+    height: 80%;
+}
+
+#eventContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eventContent img {
+    height: 40%;
+    width: 100%;
+}
+
+#weatherCard {
+    height: 80%;
+}
+#weatherContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#weatherContent img {
+    height: 10%;
+    width: 40%;
+}
+
+#weatherContent h2 {
+    width: 80%;
+}
+
+#newsCard {
+    height: fit-content;
+}
+
+#newsContent {
+    display: flex;
+
+
+}
+
+#newsContent img {
+    margin: 10px;
+    width: 40%;
+    height: 90%;
+}
+
+#newsText {
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+}
+#newsText p {
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+}
+
+#joinCard {
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joinButton {
+    text-decoration: none;
+
+    background-color: var(--accentColor);
+    color:rgb(20, 40, 63);
+    margin-top: 10%;
+    padding: .5em;
+    border-radius: 25px;
 }
