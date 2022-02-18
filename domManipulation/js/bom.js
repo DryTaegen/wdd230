@@ -18,8 +18,4 @@ button.addEventListener("click", function(){
             input.focus();
         });
         newItem.appendChild(delButton);
-        list.appendChild(newItem);
-        input.value = "";
-        input.focus();
-    }
-});
+    }})
