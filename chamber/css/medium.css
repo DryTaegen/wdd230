@@ -9,7 +9,9 @@
         grid-template-rows: repeat(5, 1fr);
         align-items: center;
     }
-
+    #heroInvite {
+        padding: 3em;
+    }
     #spotlightCard {
         flex-direction: row;
     }

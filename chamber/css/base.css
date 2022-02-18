@@ -62,7 +62,7 @@ main {
     position: absolute;
     padding: 1em;
     opacity: .8;
-    top: 15%;
+    top: 0%;
     left: 5%;
 }
 
@@ -71,7 +71,7 @@ main {
     position: absolute;
     background-color: var(--accentColor);
     color:rgb(20, 40, 63);
-    padding: 3em;
+    padding: .5em;
     bottom: 15%;
     right: 5%;
     border-radius: 25px;

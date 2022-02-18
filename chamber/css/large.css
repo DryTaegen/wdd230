@@ -2,7 +2,9 @@
     #navbar li:first-child {
 		display: none;
 	}
-
+    #heroInvite {
+        padding: 3em;
+    }
 
 
     #navbar {
