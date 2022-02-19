@@ -11,7 +11,7 @@
     --titleFont: 'Slabo 27px', serif;    
 }
 
-
+/* general syling */
 body {
     background-color: white;
     max-width: 100%;
@@ -32,87 +32,29 @@ main {
     grid-template-rows: repeat(6, 1fr);
     align-items: center;
 }
-
-.contentCard {
-    background-color: var(--secondColor);
-    height: 10em;
-    margin: 1em;
-    text-align: center;
-    color: white;
-}
-
-.contentCard h2 {
-    background-color: var(--mainColor);
-}
-#heroCard {
-    
-    position: relative;
-    max-height: 1700px;
-}
-#heroCard img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    min-height: 10em;
-
-}
-
-#heroHeader {
-    position: absolute;
-    padding: 1em;
-    opacity: .8;
-    top: 0%;
-    left: 5%;
-}
-
-#heroInvite {
-    text-decoration: none;
-    position: absolute;
-    background-color: var(--accentColor);
-    color:rgb(20, 40, 63);
-    padding: .5em;
-    bottom: 15%;
-    right: 5%;
-    border-radius: 25px;
-    opacity: .8;
-    transition: opacity 0.3s;
-    transition: background-color 0.3s;
-}
-
-#heroInvite:hover{
-    opacity: 1;
-
-
-
-}
-
-#spotlightCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: fit-content;
-}
-
-.spotlight {
-    display: flex;
-    flex-direction:column;
-    background-color: var(--mainColor);
-    min-width: 40%;
-    height: fit-content;
-    margin: 1em;
-    text-align: center;
-    color: white;
-}
-
-.spotlight img {
-    align-self: center;
-    width: 80%;
-}
-.spotlight p {
-
+h2, h3, h4, h5 {
+    font-family: var(--headerFont);
+    align-self: flex-start;
+    padding-left: 5%;
+    }
+h2 {
     align-self: center;
 }
+p {
+font-family: var(--paragraphFont);
+max-width: 60%;
+color: white;
+font-size: 115%;
+}
+.center {
+    align-self: center;
+}
+
+
+
+
+
+/* header styling */
 header {
     background-color: var(--secondColor);
     width: 100%;
@@ -121,18 +63,16 @@ header {
     margin: 0 auto;
 
 }
-
 .boarderTop {
     border: white;
     border-top: 1px solid;
 }
-
 #headerDiv {
     display: flex;
     flex-direction: row;
     max-height: 10em;
+    justify-content: space-between;
 }
-
 #headerContent {
     display: flex;
     flex-direction: row;
@@ -152,8 +92,8 @@ header {
     text-decoration: none;
     padding: 1em;
     margin-left: 3em;
-}
 
+}
 .socials li {
     margin: 1em;
     justify-self: center;
@@ -165,11 +105,9 @@ header {
     object-fit: contain;
 
 }
-
 header h1 {
     font-family: var(--titleFont);
 }
-
 nav ul {
     width: 100%;
     background-color:#043764;
@@ -183,7 +121,6 @@ nav ul {
     margin-right: 3%;
     margin-top: 0px;
 }
-
 #headerDate {
     width: 100%;
     background-color:#043764;
@@ -191,17 +128,14 @@ nav ul {
     padding: 1%;
     color: var(--accentColor);
 }
-
 nav ul li {
     text-decoration: none;    
     flex: 1 1 auto;
 
 }
-
 .minimized li {
     display: none;
 }
-
 nav ul li a {
     display: block;
     background-color: var(--mainColor);
@@ -211,58 +145,36 @@ nav ul li a {
 	text-decoration: none;
 	font-size: 0.9rem;
 }
-
 nav ul li a:hover {
     background-color: var(--secondColor);
     color: var(--accentColor);
 }
-
 .active {
     background-color: var(--accentColor);
     color: var(--mainColor);  
 }
-
-h2, h3, h4, h5 {
-font-family: var(--headerFont);
-align-self: flex-start;
-padding-left: 5%;
-}
-
-h2 {
-    align-self: center;
-}
-
-p {
-font-family: var(--paragraphFont);
-max-width: 60%;
-color: white;
-font-size: 115%;
-}
-
-
 .extendedBar {
     display: flex;
     flex-direction: column;
 }
-
 .extendedBar li {
     display: block;
 }
-
 .extend {
     display: block;
 }
-
-
 #navbar li:first-child {
 	display: block;
 }
-
 .extendedBar li:first-child {
     display: none;
 }
 
 
+
+
+
+/* footer styling */
 footer {
     background-color: var(--mainColor);
     display: flex;
@@ -270,33 +182,27 @@ footer {
     width: 100%;
     color: var(--accentColor);
 }
-
 footer img {
     margin: 1em;
     align-self: center;
 }
-
-
 .upperDiv {
     display: flex;
     flex-direction: column;
 
 }
-
 #footText1 {
     display: flex;
     flex-direction: column;
     margin: 3em;
     align-items: center;
 }
-
 #footText2 {
     display: flex;
     flex-direction: column;
     margin: 3em;
     align-items: center;
 }
-
 #footText2 a{
     display: block;
     background-color: var(--secondColor);
@@ -306,7 +212,6 @@ footer img {
 	text-decoration: none;
 	font-size: 0.9rem;
 }
-
 .subDiv {
     display: flex;
     flex-direction: column;
@@ -315,14 +220,90 @@ footer img {
 
 }
 
+
+
+
+
+/* home cards styling */
+.contentCard {
+    background-color: var(--secondColor);
+    height: 10em;
+    margin: 1em;
+    text-align: center;
+    color: white;
+}
+.contentCard h2 {
+    background-color: var(--mainColor);
+}
+#heroCard {
+    
+    position: relative;
+    max-height: 1700px;
+}
+#heroCard img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    min-height: 10em;
+
+}
+#heroHeader {
+    position: absolute;
+    padding: 1em;
+    opacity: .8;
+    top: 0%;
+    left: 5%;
+}
+#heroInvite {
+    text-decoration: none;
+    position: absolute;
+    background-color: var(--accentColor);
+    color:rgb(20, 40, 63);
+    padding: .5em;
+    bottom: 15%;
+    right: 5%;
+    border-radius: 25px;
+    opacity: .8;
+    transition: opacity 0.3s;
+    transition: background-color 0.3s;
+}
+#heroInvite:hover{
+    opacity: 1;
+
+
+
+}
+#spotlightCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+.spotlight {
+    display: flex;
+    flex-direction:column;
+    background-color: var(--mainColor);
+    min-width: 40%;
+    height: fit-content;
+    margin: 1em;
+    text-align: center;
+    color: white;
+}
+.spotlight img {
+    align-self: center;
+    width: 80%;
+}
+.spotlight p {
+
+    align-self: center;
+}
 .noDateBanner {
     display: none;
 }
-
 .dateBanner {
     display: block;
 }
-
 #datedBanner {
     background-color: var(--secondColor);
     padding: 2em;
@@ -332,18 +313,15 @@ footer img {
 #eventCard {
     height: 80%;
 }
-
 #eventContent{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #eventContent img {
     height: 40%;
     width: 100%;
 }
-
 #weatherCard {
     height: 80%;
 }
@@ -356,27 +334,22 @@ footer img {
     height: 10%;
     width: 40%;
 }
-
 #weatherContent h2 {
     width: 80%;
 }
-
 #newsCard {
     height: fit-content;
 }
-
 #newsContent {
     display: flex;
 
 
 }
-
 #newsContent img {
     margin: 10px;
     width: 40%;
     height: 90%;
 }
-
 #newsText {
     display: flex;
     flex-direction: column;
@@ -387,14 +360,12 @@ footer img {
     margin: 10px;
     padding: 0px;
 }
-
 #joinCard {
     height:fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .joinButton {
     text-decoration: none;
 
@@ -403,4 +374,30 @@ footer img {
     margin-top: 10%;
     padding: .5em;
     border-radius: 25px;
+}
+
+
+
+/* discover page styling */
+
+#discoverMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discoverCard {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--secondColor);
+    width:60%;
+    margin: .5em;
+    justify-content: space-between;
+    align-items: center;
+}
+.discoverCard picture {
+    justify-self: flex-end;
+    }
+.discoverCard p {
+    text-align: center;
 }

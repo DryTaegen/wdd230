@@ -1,38 +1,85 @@
 @media only screen and (min-width: 60em) {
-    #navbar li:first-child {
-		display: none;
-	}
+
+/* general styling */
+#mainDiv {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+
+/* header styling */
+#navbar li:first-child {
+    display: none;
+}
+#navbar {
+    flex-direction: row;
+}
+
+
+
+/* footer styling */
+footer {
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--accentColor);
+}
+footer img {
+    margin: 1em;
+}  
+.upperDiv {
+    display: flex;
+    flex-direction: row;
+
+}
+#footText1 {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    align-items: center;
+}
+#footText2 {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    align-items: center;
+}
+#footText2 a{
+    display: block;
+    background-color: var(--secondColor);
+    color: var(--accentColor);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.subDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* home cards styling */
     #heroInvite {
         padding: 3em;
     }
-
-
-    #navbar {
-        flex-direction: row;
-    }
-
-    #mainDiv {
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
     #spotlightCard {
         flex-direction: column;
         grid-column: 3/4;
         grid-row: 1/4;
         min-height: 40%;
     }
-
     .contentCard {
         grid-column: 1/3;
         min-height: 10em;
     }
-
     #weatherCard {
         grid-column: 1/2;
         grid-row: 2/3;
-        }
-
+    }
     #eventCard {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -44,12 +91,10 @@
 
     
     }
-
     #heroHeader {
         top: 5%;
         left: 10%;
     }
-
     #heroInvite {
         bottom: 5%;
         right: 10%;
@@ -62,57 +107,5 @@
         grid-column: 2/3;
         grid-row: 3/4;
     }
-
-    footer {
-        background-color: var(--mainColor);
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        color: var(--accentColor);
-    }
-    
-    footer img {
-        margin: 1em;
-    }
-    
-    .upperDiv {
-        display: flex;
-        flex-direction: row;
-    
-    }
-    
-    #footText1 {
-        display: flex;
-        flex-direction: column;
-        margin: 3em;
-        align-items: center;
-    }
-    
-    
-    #footText2 {
-        display: flex;
-        flex-direction: column;
-        margin: 3em;
-        align-items: center;
-    }
-    
-    #footText2 a{
-        display: block;
-        background-color: var(--secondColor);
-        color: var(--accentColor);
-        text-align: center;
-        padding: 15px;
-        text-decoration: none;
-        font-size: 0.9rem;
-    }
-    
-    .subDiv {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
 }
-
-
 
