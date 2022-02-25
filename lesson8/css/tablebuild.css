@@ -1,0 +1,39 @@
+html {
+    font-family: Ubuntu, sans-serif;
+  }
+  main {
+      display:flex;
+      justify-content:center;
+  }
+  table {
+    border-collapse: collapse;
+    border: 2px solid #985F99;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    box-shadow: 0 0 30px;
+  }
+  
+
+  td, th {
+    border: 1px solid #985F99;
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: #AAACB0;
+  }
+
+  #tabhead {
+    background-color: #9684A1;
+  }
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #B6C9BB;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: #BFEDC1;
+  }
