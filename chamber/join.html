@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber of Commerce Cottonwood Heights</title>
+    <meta name="description" content="The discovery page for the Chamber of Commerce for the city of Cottonwood Heights in Utah.">
+    <link rel="stylesheet" href="css/normalize.css">  
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+    
+</head>
+
+<body>
+
+    <header>
+        <div id=headerDiv>
+            <img class="logo" src="images/Commerse.webp" alt="Custom logo for the Chamber of Commerce for Cottonwood Heights">
+
+            <div id="title">
+                <h1>Cottonwood Heights</h1>
+                <h4>Chamber of commerce</h4>
+            </div>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo"></a></li>
+
+                </ul>
+            
+
+
+              
+        </div>
+        <nav>
+            <ul id="navbar" class="minimized extendedBar">
+                <li><a id=smallMenu href="#">☰</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="headerDate"></div>
+    </header>
+
+    <main class="joinMain">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tell" name="phone" required></label>
+                <label>E-mail* <input type="email" name="email" placeholder="person@abc.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business Name* <input type="text" name="bname" required></label>
+                <label>Description <textarea  name="bdescription" placeholder="Brief discription of business"></textarea></label>
+                <label>Position Title <input type="text" name="title"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Tier</legend>
+                    <div class="radioList">
+                        <div>Select a membership level</div>
+                        <div class="option">
+                            <label class="radioTier" id="tier1"><input type="radio" name="mlevel" value="tier 1">NP Membership </label>
+                            <div class="tierHover" id="hover1"><h4>Non profit Membership</h4><p>(non-profit organization) $0</p></div>
+                        </div>
+                        <div class="option">
+                            <label class="radioTier" id="tier2"><input type="radio" name="mlevel" value="tier 2">Bronze Membership </label>
+                            <div class="tierHover" id="hover2"><h4>Bronze Membership</h4><p>(Newsletter and advertising opportunities) $100/year</p></div>
+                        </div>
+                        <div class="option">
+                            <label class="radioTier" id="tier3"><input type="radio" name="mlevel" value="tier 3">Silver Membership </label>
+                            <div class="tierHover" id="hover3"><h4>Silver Membership</h4><p>(Bronze tier + access to our databases and monthly meet-and-greet) $300/year</p></div>
+                        </div>
+                        <div class="option">
+                            <label class="radioTier" id="tier4"><input type="radio" name="mlevel" value="tier 4">Gold Membership </label>
+                            <div class="tierHover" id="hover4"><h4>Gold Membership</h4><p>(non-profit organization) (Silver tier + full access to our assets, discounts, seminars, and exclusive golden events) $700/year</p></div>
+                        </div>
+                    </div>
+            </fieldset>
+            <input type="hidden" name="subdate" id="todayDate"/>
+            <input type="submit" value="Become A Member">
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="upperDiv">
+            <img class="logo" src="images/Commerse.webp" alt="Custom logo for the Chamber of Commerce for Cottonwood Heights">
+            <div id="footText1">
+                <h4>Cottonwood Heights Chamber of Commerce</h4>
+                <p>2277 Bengal Blvd, Cottonwood Heights, UT 84121</p>
+            </div>
+            <div id="footText2">
+                <p>info@chcc.gov</p>
+                <p>(801)-944-7000</p>
+                <a href="#">Click for location on map</a>
+            </div>
+        </div>
+        <div class="subDiv">
+            <p id=footerText> &copy; <span id=copyWright></span> | Taemour Djahanbani | WDD 230 Project | Chamber of Commerce project </p>
+            <p id=updateText>  Last Updated: <span id=lastTouch></span></p>  
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>

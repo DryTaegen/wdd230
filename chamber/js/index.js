@@ -61,7 +61,7 @@ days.innerHTML = (change);
 
 
 
-
+document.querySelector("#todayDate").value = currentDate;
 
 
 today = currentDate.getDay();

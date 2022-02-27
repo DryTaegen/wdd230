@@ -401,3 +401,79 @@ footer img {
 .discoverCard p {
     text-align: center;
 }
+
+/* join page styling  */
+form {
+    width: 80%;
+    background-color: var(--secondColor);
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    border-radius: 20px;
+    padding: .5em;
+    background-color: var(--accentColor);
+}
+legend {
+    margin: 0 1em;
+    padding: 0 1rem;
+    background-color: var(--accentColor);
+    border-radius: 20px;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    color: var(--secondColor);
+    font-size: .8;
+}
+
+.radioList .option {
+    display: flex;
+    
+}
+
+.radioTier {
+    margin: 0 2em;
+}
+.tierHover {
+    display: none;
+    background-color: var(--mainColor);
+    padding: 1em;
+    max-width: 50%;
+}
+
+.tierHover h4 {
+    background-color: var(--accentColor);
+    padding: .5em;
+}
+.radioTier:hover {
+    color: orangered
+}
+
+.radioTier:hover + .tierHover {
+    display: block;
+}
+
+#thankYouMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accentColor);
+
+}
+#thankText {
+    margin: 10em;
+    margin-top: 2em;
+    padding: 5em;
+    background-color:#5c84be;
+    border-radius: 20px;
+    color:rgb(20, 40, 63);
+    font-size: 2em
+}
+
+.joinMain {
+    display: flex;
+    justify-content: center;
+}
