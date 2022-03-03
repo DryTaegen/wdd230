@@ -38,3 +38,7 @@ body {
     margin: 5px;
     text-align: center;
 }
+
+.cards section img {
+    max-width: 75%;
+}
