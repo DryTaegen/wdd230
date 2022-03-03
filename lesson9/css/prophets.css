@@ -1,0 +1,40 @@
+
+
+:root {
+    --headerFont: font-family: 'Hubballi', cursive;
+    --paraFont: font-family: 'Slabo 27px', serif;
+    --mainColor: #C8AB83;
+    --secondColor: #55868C;
+    --accentOne: #7F636E;
+    --accentTwo: #CACAAA;
+    --accentThree: #EEC584;
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--headerFont);
+    color: var(--accentThree);
+    text-align: center;
+}
+
+p {
+    font-family: var(--paraFont);
+
+}
+body {
+    background-color: var(--accentOne);
+}
+.cards {
+    background-color: var(--mainColor);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    box-shadow: 0 4px 8px , 0 6px 20px 0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cards section {
+    background-color: var(--secondColor);
+    border: 2px solid var(--accentOne);
+    margin: 5px;
+    text-align: center;
+}
