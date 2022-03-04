@@ -14,18 +14,19 @@ fetch(requestURL)
   
 });
 
-switcher.onclick = classChange(switched)
+switcher.onclick = classChange()
 
-function classChange(switched) {
-    // if (switched.classList == "cardsDiv") {
-    //   switcher.classList.add("listDiv") 
-    //   switcher.classList.remove("cardsDiv")
-    // }else if (switched.classList == "listDiv") {
-    //   switcher.classList.add("cardsDiv") 
-    //   switcher.classList.remove("listDiv")
-    switched.classList.toggle("cardsDiv");
-    switched.classList.toggle("listDiv");
+function classChange() {
+    if (switched.classList.indexOf("cardsDiv")) {
+      switcher.classList.add("listDiv") 
+      switcher.classList.remove("cardsDiv")
+    }else if (switched.classList.indexOf("listDiv")) {
+      switcher.classList.add("cardsDiv") 
+      switcher.classList.some("listDiv")
     }
+  }
+
+
 
 function displayBusinesses(business) {
     let card = document.createElement("div");
