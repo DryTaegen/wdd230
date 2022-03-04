@@ -17,10 +17,10 @@ fetch(requestURL)
 switcher.onclick = classChange()
 
 function classChange() {
-    if (switched.classList.indexOf("cardsDiv")) {
+    if (switched.classList.contains("cardsDiv")) {
       switcher.classList.add("listDiv") 
       switcher.classList.remove("cardsDiv")
-    }else if (switched.classList.indexOf("listDiv")) {
+    }else if (switched.classList.contains("listDiv")) {
       switcher.classList.add("cardsDiv") 
       switcher.classList.some("listDiv")
     }
