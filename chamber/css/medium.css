@@ -85,5 +85,11 @@ footer img {
     .discoverCard picture :hover {
         transform: scale(1.1)
     }
+    
+    /* directory stylink */
+    .cardsDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
 }
 
