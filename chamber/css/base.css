@@ -488,6 +488,9 @@ label {
     display: grid;
     grid-template-columns: repeat(1, 1fr)
 }
+.listDiv {
+    width: 90%;
+}
 .cardsDiv .bCard {
     display: flex;
     flex-direction: column;
@@ -499,16 +502,53 @@ label {
     text-align: center;
 
 }
+.cardsDiv .bCard h2 {
+    display: none;
+}
+.listDiv .bCard h2 {
+    color: var(--mainColor);
+}
+.listDiv .bCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* nth-child https://www.w3schools.com/cssref/sel_nth-child.asp */
+/* every .bCard that is an even numbered child of it's parent */
+.listDiv .bCard:nth-child(even) {
+    background-color: white;
+  }
+  
+/* every .bCard that is an odd numbered child of it's parent */
+.listDiv .bCard:nth-child(odd) {
+    background-color: var(--accentColor);
+  }
+
 .cardsDiv .bCard img {
     max-width: 90%;
     margin-top: 5px;
     border: 2px solid white;
 
 }
+.listDiv .bCard img {
+    display: none;
+}
 .cardsDiv .bCard a {
     color: white;
     margin: 15px;
+    font-family: var(--paragraphFont);
+
 }
+.listDiv .bCard a {
+	color: var(--mainColor);
+	text-align: center;
+	padding: 15px;
+    font-family: var(--paragraphFont);
+}
+.listDiv .bCard p{
+    color: var(--mainColor);
+}
+
 #displaySwitch {
     position: relative;
     display: inline-block;

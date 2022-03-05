@@ -1,7 +1,6 @@
 const requestURL = "https://drytaegen.github.io/wdd230/chamber/data/data.json";
-const cards = document.querySelector('.cardsDiv');
 const switcher = document.querySelector("#changer");
-let switched = document.querySelector("#switched");
+let switched = document.querySelector(".directoryDiv");
 
 
 fetch(requestURL)
@@ -14,17 +13,17 @@ fetch(requestURL)
   
 });
 
-switcher.addEventListener("click",classChange())
+switcher.addEventListener("click",classChange)
 
 function classChange() {
-    if (switched.classList.contains("cardsDiv")) {
-      switcher.classList.add("listDiv") 
-      switcher.classList.remove("cardsDiv")
-    }else if (switched.classList.contains("listDiv")) {
-      switcher.classList.add("cardsDiv") 
-      switcher.classList.some("listDiv")
-    }
+  if (switched.classList.contains("cardsDiv")) {
+    switched.classList.add("listDiv") 
+    switched.classList.remove("cardsDiv")
+  }else if (switched.classList.contains("listDiv")) {
+    switched.classList.add("cardsDiv") 
+    switched.classList.remove("listDiv")
   }
+}
 
 
 
@@ -34,9 +33,11 @@ function displayBusinesses(business) {
     let address = document.createElement("p");
     let phone = document.createElement("p");
     let website = document.createElement("a");
+    let name = document.createElement("h2");
   
     address.textContent = business.address;
     phone.textContent = business.phone;
+    name.textContent = business.name;
 
     website.setAttribute("href", business.website);
     website.textContent = (business.website);
@@ -46,11 +47,12 @@ function displayBusinesses(business) {
     logo.setAttribute('alt',`Logo for ${business.name}`);
     logo.setAttribute('loading', 'lazy');
   
+    card.appendChild(name)
     card.appendChild(logo);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
     card.setAttribute("class","bCard")
   
-    cards.appendChild(card);
+    switched.appendChild(card);
 }

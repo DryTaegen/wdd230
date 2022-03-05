@@ -6,12 +6,6 @@ document.querySelectorAll(".copyWright").textContent = currentDate.getFullYear()
 document.getElementById("lastTouch").textContent = document.lastModified;
 
 
-// const classToggle = document.getElementsByClassName("smallMenu");
-// const navBar = document.getElementsByClassName("navbar");
-
-// classToggle.addEventListener("click", () => {navBar.classList.toggle("extended")}, false)
-
-// window.onresize = () => {if (window.innerWidth > 760) navBar.classList.remove("extended")};
 
 
 function toggleMenu(){
@@ -57,7 +51,7 @@ if (lastDate == 0) {
     change = Math.round((todayDate - lastDate) / (86400000)); //ms to days conversion
 }
 localStorage.setItem("visitStamp", todayDate);
-days.innerHTML = (change);
+days.textContent = (change);
 
 
 
