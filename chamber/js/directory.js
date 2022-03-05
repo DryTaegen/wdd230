@@ -14,7 +14,7 @@ fetch(requestURL)
   
 });
 
-switcher.onclick = classChange()
+switcher.addEventListener("click",classChange())
 
 function classChange() {
     if (switched.classList.contains("cardsDiv")) {
