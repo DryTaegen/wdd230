@@ -323,7 +323,7 @@ footer img {
     width: 100%;
 }
 #weatherCard {
-    height: 80%;
+    height: fit-content;
 }
 #weatherContent {
     display: flex;
