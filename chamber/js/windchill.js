@@ -1,6 +1,6 @@
 
 // const loctateURL = "http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={a8b173af1b1bae252cc423378ba8b20a}";
-const apiURL = 'http://api.openweathermap.org/data/2.5/weather?&lat=40.6197&lon=-111.8102&units=imperial&appid=a8b173af1b1bae252cc423378ba8b20a';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?&lat=40.6197&lon=-111.8102&units=imperial&appid=a8b173af1b1bae252cc423378ba8b20a';
 
 fetch(apiURL)
   .then((response) => response.json())
