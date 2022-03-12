@@ -39,23 +39,6 @@ function displayBanner() {
 
 // days since last visit
 
-const days = document.querySelector("#daysPassed");
-let todayDate = Number(Date.now())
-let lastDate = Number(window.localStorage.getItem("visitStamp"));
-console.log(todayDate)
-console.log(lastDate)
-let change = 0
-if (lastDate == 0) {
-    change = 0;
-} else {
-    change = Math.round((todayDate - lastDate) / (86400000)); //ms to days conversion
-}
-localStorage.setItem("visitStamp", todayDate);
-days.textContent = (change);
-
-
-
-document.querySelector("#todayDate").value = currentDate;
 
 
 today = currentDate.getDay();
@@ -71,6 +54,25 @@ else {
     banner.classList.remove("dateBanner");
     banner.classList.add("noDateBanner");
 }
+
+
+const days = document.querySelector("#daysPassed");
+let todayDate = Number(Date.now())
+let lastDate = Number(window.localStorage.getItem("visitStamp"));
+console.log(todayDate)
+console.log(lastDate)
+let change = 0
+if (lastDate == 0) {
+    change = 0;
+} else {
+    change = Math.round((todayDate - lastDate) / (86400000)); //ms to days conversion
+}
+localStorage.setItem("visitStamp", todayDate);
+days.textContent = (change);
+
+document.querySelector("#todayDate").value = currentDate;
+
+
 
 
 
