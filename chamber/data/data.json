@@ -5,84 +5,96 @@
         "address": "3432 Highland Blvd, Cottonwood Heights, UT",
         "phone": "801-643-7485",
         "website": "https:electricworkersut.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/1.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/1.jpg",
+        "membership": "Gold"
       },
       {
         "name": "Interior Inspiration",
         "address": "543 Highland Drive, Cottonwood Heights, UT",
         "phone": "801-592-6215",
         "website": "https://www.interiordecorut.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/2.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/2.jpg",
+        "membership": "Silver"
       },
       {
         "name": "The Mediterranean  Oven",
         "address": "145 Bengal Blvd., Cottonwood Heights, UT",
         "phone": "801-907-4322",
         "website": "https://www.mediterraneanoven.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/3.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/3.jpg",
+        "membership": "Bronze"
       },
       {
         "name": "Safety, Prep, and More",
         "address": "142 E 7200 S, Cottonwood Heights, UT",
         "phone": "801-116-6753",
         "website": "https://www.safetypreputah.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/4.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/4.jpg",
+        "membership": "Silver"
       },
       {
         "name": "The Potter's Corner",
         "address": "7794 S 1300 E, Cottonwood Heights, UT",
         "phone": "801-344-8709",
         "website": "https://www.pottercorner.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/5.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/5.jpg",
+        "membership": "Silver"
       },
       {
         "name": "Exverminate",
         "address": "1165 Van winkle Drive Suite #3, Cottonwood Heights, UT",
         "phone": "801-109-7868",
         "website": "https://www.exverminatepestcontrol.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/6.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/6.jpg",
+        "membership": "Bronze"
       },
       {
         "name": "Grub and Pub Hangout",
         "address": "32 Shopping center Drive Unit #5, Cottonwood Heights, UT",
         "phone": "801-693-7008",
         "website": "https://www.grbpubdiner.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/7.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/7.jpg",
+        "membership": "Gold"
       },
       {
         "name": "Early Start Learners",
         "address": "4432 highland blvd, Cottonwood Heights, UT",
         "phone": "801-543-1748",
         "website": "https://www.earlystartschooling.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/8.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/8.jpg",
+        "membership": "Bronze"
       },
       {
         "name": "Deep Finnish Cleaners",
         "address": "342 Clover Drive, Cottonwood Heights, UT",
         "phone": "801-433-0908",
         "website": "https://www.finnishcleaners.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/9.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/9.jpg",
+        "membership": "Silver"
       },
       {
         "name": "Travelers Beyond",
         "address": "2710 Fort Union blvd., cottonwood Heights, UT",
         "phone": "801-767-1124",
         "website": "https://www.beyondtravelagency.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/10.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/10.jpg",
+        "membership": "Bronze"
       },
       {
         "name": "Slope Carver's Supply",
         "address": "4012 Fort Union Blvd., Cottonwood Heights, UT",
         "phone": "801-443-9970",
         "website": "https://www.slopecarversupply.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/11.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/11.jpg",
+        "membership": "Gold"
       },
       {
         "name": "Mountain Man Gear",
         "address": "3202 Fort Union Blvd., Cottonwood Heights, UT",
         "phone": "801-667-7447",
         "website": "https://www.mntmgear.com",
-        "logo": "https://drytaegen.github.io/wdd230/chamber/data/12.jpg"
+        "logo": "https://drytaegen.github.io/wdd230/chamber/data/12.jpg",
+        "membership": "Silver"
       }
     ]
   }

@@ -56,6 +56,84 @@ else {
 }
 
 
+
+
+
+
+
+const requestURL = "https://drytaegen.github.io/wdd230/chamber/data/data.json";
+const spotlightDiv = document.querySelector("#spotlightCard")
+
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const businesses = jsonObject['companies'];
+    let loop = true;
+    // Referenced for help: https://stackoverflow.com/questions/19589598/how-to-get-random-values-in-json
+    while (loop === true) {
+        let random1 = businesses[Math.floor(Math.random() * businesses.length)];
+        let random2 = businesses[Math.floor(Math.random() * businesses.length)];
+        if (random1.membership != "Bronze" && random2.membership != "Bronze") {
+            console.log("yeet")
+            if (random1 == random2) {
+                console.log("yeet")
+                pass
+            } else if (random1 != random2){
+                console.log(random1)
+                displayBusinesses(random1);
+                console.log(random2)
+                displayBusinesses(random2);
+                loop = false;
+            }
+        }
+        else {
+            pass
+        }      
+    }
+
+  
+});
+
+
+function displayBusinesses(business) {
+    let card = document.createElement("div");
+    let logo = document.createElement("img");
+    let address = document.createElement("p");
+    let phone = document.createElement("p");
+    let website = document.createElement("a");
+    let name = document.createElement("h2");
+  
+    address.textContent = business.address;
+    phone.textContent = business.phone;
+    name.textContent = business.name;
+
+    website.setAttribute("href", business.website);
+    website.textContent = (business.website);
+    
+
+    logo.setAttribute('src', business.logo);
+    logo.setAttribute('alt',`Logo for ${business.name}`);
+    logo.setAttribute('loading', 'lazy');
+
+
+    card.appendChild(name);
+    card.appendChild(logo);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
+    card.setAttribute("class","spotlight")
+  
+    spotlightDiv.appendChild(card);
+}
+
+
+
+
+
+
 const days = document.querySelector("#daysPassed");
 let todayDate = Number(Date.now())
 let lastDate = Number(window.localStorage.getItem("visitStamp"));
@@ -71,10 +149,5 @@ localStorage.setItem("visitStamp", todayDate);
 days.textContent = (change);
 
 document.querySelector("#todayDate").value = currentDate;
-
-
-
-
-
 
 
