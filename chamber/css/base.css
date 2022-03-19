@@ -301,7 +301,6 @@ footer img {
     font-family: var(--paragraphFont);
     max-width: 60%;
     color: white;
-    font-size: 115%;
     padding: .5em;
 }
 .noDateBanner {
