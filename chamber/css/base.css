@@ -79,9 +79,11 @@ header {
 }
 #title h1 {
     margin-bottom: 0;
+    color: white;
 }
 #title h4 { 
     margin-top: 0;
+    color: white;
 }
 .socials {
     display: flex;
@@ -437,7 +439,7 @@ label {
     flex-direction: column;
     padding-top: 1em;
     color: var(--secondColor);
-    font-size: .8;
+    font-size: 80%;
 }
 .radioList .option {
     display: flex;
