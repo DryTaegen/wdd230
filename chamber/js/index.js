@@ -72,25 +72,27 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const businesses = jsonObject['companies'];
     let loop = true;
+    
     // Referenced for help: https://stackoverflow.com/questions/19589598/how-to-get-random-values-in-json
     while (loop === true) {
+        console.log("start loop")
         let random1 = businesses[Math.floor(Math.random() * businesses.length)];
         let random2 = businesses[Math.floor(Math.random() * businesses.length)];
-        if (random1.membership != "Bronze" && random2.membership != "Bronze") {
-            console.log("yeet")
+        if (random1.membership !== "Bronze" && random2.membership !== "Bronze") {
+            console.log("not bronze")
             if (random1 == random2) {
-                console.log("yeet")
-                pass
+                console.log("are equal")
             } else if (random1 != random2){
                 console.log(random1)
                 displayBusinesses(random1);
                 console.log(random2)
                 displayBusinesses(random2);
                 loop = false;
+                console.log("happy path")
             }
         }
         else {
-            pass
+            console.log("unhappy path")
         }      
     }
 
