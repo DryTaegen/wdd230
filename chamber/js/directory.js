@@ -1,9 +1,9 @@
-const requestURL = "https://drytaegen.github.io/wdd230/chamber/data/data.json";
+const requestURL2 = "https://drytaegen.github.io/wdd230/chamber/data/data.json";
 const switcher = document.querySelector("#changer");
 let switched = document.querySelector(".directoryDiv");
 
 
-fetch(requestURL)
+fetch(requestURL2)
   .then(function (response) {
     return response.json();
   })
@@ -24,8 +24,6 @@ function classChange() {
     switched.classList.remove("listDiv")
   }
 }
-
-
 
 function displayBusinesses(business) {
     let card = document.createElement("div");

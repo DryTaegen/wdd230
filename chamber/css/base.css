@@ -42,7 +42,7 @@ h2 {
 }
 p {
 font-family: var(--paragraphFont);
-max-width: 60%;
+
 color: white;
 font-size: 115%;
 }
@@ -91,7 +91,7 @@ header {
     align-items: center;
     text-decoration: none;
     padding: 1em;
-    margin-left: 3em;
+
 
 }
 .socials li {
@@ -117,15 +117,19 @@ nav ul {
     text-align: center;
     box-shadow: 0 -5px 30px rgb(20, 40, 63);
     text-decoration: none;
-    padding: 1%;
-    margin-right: 3%;
+    padding-left: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
     margin-top: 0px;
 }
 #headerDate {
-    width: 100%;
+    width:  100%;
     background-color:#043764;
     text-align: center;
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     color: var(--accentColor);
 }
 nav ul li {
@@ -479,7 +483,32 @@ label {
     justify-content: center;
 }
 
+/* contact page styling */
 
+#contactMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondColor);
+
+}
+#questionSubmit {
+    padding: 1em;
+    margin-left: 3em;
+}
+#contactInfo {
+    box-shadow: 0 -5px 30px rgb(20, 40, 63);
+    background-color: var(--accentColor);
+    margin-right: 2.5em;
+    margin-top: 3em;
+    margin-bottom : 3em;
+    text-align: center;
+
+}
+#contactInfo p {
+    max-width: 100%;
+}
 
 /* directory page styling */
 .diretorMain {

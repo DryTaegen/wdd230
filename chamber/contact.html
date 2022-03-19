@@ -41,19 +41,42 @@
                 <li><a id=smallMenu href="#">☰</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a class="active" href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class= "active" href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="headerDate"></div>
     </header>
 
-    <main class="diretorMain">
-        <label id="displaySwitch" ><input id="changer" type="checkbox"><span class="switcher"></span></label>
-        <section id="switched" class="listDiv directoryDiv">
+    <main id="contactMain">
 
-        </section>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Ask a question</legend>
+                <label>Name* <input type="text" name="fname" required></label>
+                <label>E-mail* <input type="email" name="email" placeholder="person@abc.com" required></label>
+                <div class="radioList">
+                    <div>Are you a member of the chamber?</div>
+                    <div class="option">
+                        <label class="radioTier" id="mTrue"><input type="radio" name="mTrue" value="mTrue">Yes</label>
+                        <label class="radioTier" id="mFalse"><input type="radio" name="mTrue" value="mFalse">No</label>
+                    </div>
+                </div>
+                <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Your message..."></textarea>
+            </fieldset>
+            <input type="hidden" name="subdate" id="todayDate"/>
+            <input id= "questionSubmit" type="submit" value="send message">
+        </form>
+        <div id="contactInfo">
+            <h2>Contact Us</h2>
+            <h3>Address</h3>
+            <p>2277 Bengal Blvd, Cottonwood Heights, UT 84121</p>
+            <h3>Phone</h3>
+            <p>(801)-944-7000</p>
+            <h3>E-mail</h3>
+            <p>info@chcc.gov</p>
+        </div>
     </main>
 
     <footer>
@@ -75,5 +98,5 @@
         </div>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/directory.js"></script>
+    <script src="js/lazyload.js"></script>
 </body>

@@ -91,5 +91,9 @@ footer img {
         display: grid;
         grid-template-columns: repeat(2, 1fr)
     }
+
+    #contactMain {
+        flex-direction: row;
+    }
 }
 
