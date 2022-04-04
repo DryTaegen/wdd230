@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Fira+Mono:wght@700&family=Montserrat:wght@200&display=swap');
+
+/* basic styling */
+
+
+:root {
+    --dark-main-color: #345511 ;
+    --light-main-color: #3f6634;
+    --white-color: #eff1e4;
+    --dark-second-color: #dbb994;
+    --light-second-color: #f4ddb9;
+    --title-font: 'Charm', cursive;
+    --header-font: 'Fira Mono', monospace;
+    --paragraph-font: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+h2, h3,h4, h5, h6 {
+    font-family: var(--header-font);
+}
+
+p {
+    font-family: var(--paragraph-font)
+}
+
+img {
+    max-width: 100%;
+    padding: 1rem;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-second-color);
+}
+
+
+body {
+    margin: 0%;
+}
+
+/* header styling */
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 3fr 1fr;
+    background-color: var(--dark-main-color);
+    max-height: 300px;
+    width: 100%;
+    margin:0%;
+    padding:0;
+}
+
+header img {
+    grid-row: 1;
+    grid-column: 1/2;
+}
+
+header h1 {
+    grid-row: 1;
+    grid-column: 3/6;
+}
+
+header .socials {
+    display: flex;
+    grid-row: 1;
+    grid-column: 8/9;
+}
+
+.socials a {
+    padding: .5rem;
+}
+
+nav {
+
+    grid-row: 2;
+    grid-column: 1/9;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#smallMenu {
+    display: none;
+}
+
+
