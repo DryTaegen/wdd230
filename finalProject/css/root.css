@@ -85,10 +85,16 @@ header .socials {
     display: flex;
     grid-row: 1;
     grid-column: 8/9;
+    
 }
 
-.socials a {
+.socials img {
+    padding: 0;
+}
+
+header .socials a {
     padding: .5rem;
+    max-height: 50%;
 }
 
 nav {
@@ -124,10 +130,17 @@ nav ul li a{
 
 /* footer styling */
 footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
     background-color: var(--dark-main-color);
 }
 
-
+footer .socials {
+    position: absolute;
+    right: 5px;
+}
 /* home styling */
 
 main {
@@ -138,6 +151,7 @@ main {
 }
 
 #weatherAlert {
+    display: none;
     grid-column: 1/4;
     grid-row: 1.2;
     background-color: var(--dark-second-color);
@@ -153,12 +167,30 @@ main {
 }
 
 #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: var(--light-main-color);
     border: 7px solid var(--dark-second-color);
     border-radius: 15px;
     margin: 10px;
+}
+#contact h3 {
+    text-align: center;
+    grid-column: 1/3;
+    grid-row:  1/2;
+}
+#contactAddress {
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#contactOther {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 #temple {

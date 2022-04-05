@@ -1,0 +1,52 @@
+{
+    "temples": [
+        {
+            "Name": "Winter Quarters Nebraska Temple",
+            "Image": "images/winter_quarters_temple_lds.jpeg",
+            "address": "8283 N 34th St Omaha NE 68112 United States",
+            "phone": "(1) 402-453-3406",
+
+            "serivces": ["No clothing rental available","No cafeteria available", "No patron housing available","No distribution center nearby"],
+            "history": "The Winter Quarters Temple was announced on the 14th of June 1999. Work began on the 28th of November 1999 and was dedicated the 22nd of April 2001.", 
+            "ordinanceSchedule": "All sessions and ordinances are currently by appointment only. Visit the temple website below to see times and schedule.", 
+            "link": "https://www.churchofjesuschrist.org/temples/details/winter-quarters-nebraska-temple?lang=eng",
+            "templeClosure": ["Monday, 29 August 2022 - Monday, 26 September 2022","Saturday, 1 October 2022","Thursday, 24 November 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        },
+        {
+            "Name": "Oakland California Temple",
+            "Image": "images/oakland_california_temple_lds.jpeg",
+            "address": "4770 Lincoln Ave. Oakland CA 94602-2535 United States",
+            "phone": "(1) 510-531-3200",
+
+            "serivces": ["Clothing rental available","No cafeteria available","Patron housing available","Distribution center nearby"],
+            "history": "The Oakland Temple was announced on the 23rd of January 1961. Work began on the 26th of May 1962 and was dedicated the 17th of November 1964.", 
+            "ordinanceSchedule": "All sessions and ordinances are currently by appointment only. Visit the temple website below to see times and schedule.", 
+            "link": "https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng",
+            "templeClosure": ["Monday, 5 September 2022 - Monday, 19 September 2022", "Saturday, 1 October 2022", "Wednesday, 23 November 2022 (Limited Operations", "24 October 2022","Thursday, 24 November 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        },
+        {
+            "Name": "Calgary Alberta Temple",
+            "Image": "calgary_alberta_temple_lds.jpeg",
+            "address": "9802 Rocky Ridge Rd NW Calgary AB T3G 5J7 Canada",
+            "phone": "(1) 403-241-4250",
+
+            "serivces": ["No clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "history": "The Calgary Temple was announced on the 4th of October 2008. Work began on the 15th of May 2010 and was dedicated the 28th of October 2012.", 
+            "ordinanceSchedule": "All sessions and ordinances are currently by appointment only. Visit the temple website below to see times and schedule.",
+            "link": "https://www.churchofjesuschrist.org/temples/details/calgary-alberta-temple?lang=eng", 
+            "templeClosure": ["Friday, 1 July 2022","Monday, 5 September 2022 - Monday, 19 September 2022","Saturday, 1 October 2022", "Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        },
+        {
+            "Name": "Nauvoo Illinois Temple",
+            "Image": "images/nauvoo_temple_lds.jpg",
+            "address": "50 N Wells St Nauvoo IL 62354 United States",
+            "phone": "(1) 217-453-6252",
+
+            "serivces": ["Clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
+            "history": "The Nauvoo Temple was announced on the 23rd of January 1961. Work began on the 26th of May 1962 and was dedicated the 17th of November 1964.", 
+            "ordinanceSchedule": "All sessions and ordinances are currently by appointment only. Visit the temple website below to see times and schedule", 
+            "link": "https://www.churchofjesuschrist.org/temples/details/nauvoo-illinois-temple?lang=eng",
+            "templeClosure": ["Monday, 28 March 2022 - Monday, 23 May 2022","Monday, 26 September 2022 - Monday, 24 October 2022","Thursday, 24 November 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        }
+    ]
+}  
