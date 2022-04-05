@@ -45,12 +45,12 @@ function displayBusinesses(business) {
     logo.setAttribute('alt',`Logo for ${business.name}`);
     logo.setAttribute('loading', 'lazy');
   
-    card.appendChild(name)
+    card.appendChild(name);
     card.appendChild(logo);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
-    card.setAttribute("class","bCard")
+    card.setAttribute("class","bCard");
   
     switched.appendChild(card);
 }
