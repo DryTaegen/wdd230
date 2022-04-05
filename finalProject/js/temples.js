@@ -1,6 +1,6 @@
 const requestURL = "https://drytaegen.github.io/wdd230/finalProject/data/temples.json";
-let templeCarousel = document.querySelector("#templeCarousel")
-
+const templeCarousel = document.querySelector("#templeCarousel")
+const button1 = document.querySelector("#button1")
 
 fetch(requestURL)
   .then(function (response) {
@@ -59,10 +59,20 @@ fetch(requestURL)
         carousel.appendChild(name);
         carousel.appendChild(image);
         carousel.appendChild(templeInfo);
-        carousel.setAttribute("class", "Carousel");
+        carousel.classList.add("Carousel");
+        carousel.classList.add("hidden");
+        carousel.classList.add(`${temple.id}`);
       
         templeCarousel.appendChild(carousel);
     }
 
   
 });
+
+
+button1.addEventListener("click", makeVisible);
+
+
+function makeVisible() {
+  document.get
+}

@@ -143,7 +143,7 @@ footer .socials {
 }
 /* home styling */
 
-main {
+#indexMain {
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
     grid-template-rows: 50px  1fr 2fr;
@@ -269,3 +269,14 @@ main {
 }
 
 
+
+/* temple styling */
+
+#templeCarousel{
+    display: flex;
+    background-color: var(--light-main-color);
+}
+
+.hidden {
+    display: none;
+}
