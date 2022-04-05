@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chamber of Commerce Cottonwood Heights</title>
-    <meta name="description" content="The home site for the Chamber of Commerce for the city of Cottonwood Heights in Utah.">
+    <title>Temple Inn & Suites</title>
+    <meta name="description" content="Home page for the Temple inn and suites">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -12,11 +12,11 @@
     
 <body>
     <header>
-        <img src="images/Temple inn.jpg">
+        <img src="images/Temple inn.jpg" alt="Temple inn and suites logo">
         <h1>Temple Inn & Suites</h1>    
         <div class="socials">
-            <a href=""><img src="images/instagram.png"></a>
-            <a href=""><img src="images/facebook.png"></a>
+            <a href=""><img src="images/instagram.png" alt="Instagram logo"></a>
+            <a href=""><img src="images/facebook.png" alt="Facebook logo"></a>
         </div>
         <nav>
             <ul>
@@ -31,32 +31,50 @@
 
 
     <main>
+        <div id="weatherAlert"></div>
         <div id="reviews">
-            <h3></h3>
-            <div class="review"></div>
-            <div class="review"></div>
+            <h3>Reviews</h3>
+            <div class="review">
+                <h4>Maria C.</h4>
+                <p>Stayed at our Oakland location</p>
+                <p>"When I was planning the trip, I'll be honest, I wasn't sure if I would feel comfortable staying in oakland for a couple of days. Fortunately, that all changed when I saw the location of the Temple Inn and  Suites. It was very close to the temple and felt like such an inviting and secure place. I would highly suggest anyone looking for a place to stay for the temple trip check out the Temple Inn and Suites. They will have my patronage from now on."</p> 
+            </div>
+            <div class="review">
+                <h4>Porter R.</h4>
+                <p>Stayed at our Winter Quarters location</p>
+                <p>"I am in love with church history, but constant travel isn't very realistic. So when I found out that there was an affordable place to stay themed around the area of Winter Quarters I thought that it would be the perfect opportunity to visit and enjoy the history there. I was not dissapointed upon arrival. In the lobby there were all sorts of cool facts about the early church on display there and I was able to meet others who were just as excided about all this as I was. Highly reccomended to anyone."
+            </div>
         </div>
         <div id="contact">
-            <h3></h3>
-            <p></p>
-            <p></p>
-            <a id = "contactButton" href=""></a>
+            <h3>Contact Us</h3>
+            <h4>Main office address</h4>
+            <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <h4>E-mail and phone</h4>
+            <p>templeinn@suites.com</p>
+            <p>240-045-7721</p>
         </div>
         <div id="temple">
-            <h3></h3>
-            <img>
-            <a id= "bookButton" href=""></a>
-        </div>
-        <div id="templeInfo">
-            <h3></h3>
-            <p></p>
-            <p></p>
+            <h3>Calgary Alberta Temple</h3>
+            <img src="images/calgaryTemple.jpg" alt="The calgary temple at sundown.">
+            
+            <div id="templeInfo">
+                <h4>Address</h4>
+                <p>9802 Rocky Ridge Road NW Calgary, Alberta  T3G 5J7</p>
+                <h4>Phone:</h4>
+                <p>(+1) 403-241-4250</p>
+                <h4>Dedication</h4>
+                <p>28 October 2012 by Thomas S. Monson</p>
+                <p>The Calgary Alberta Temple was the eighth temple built in Canada and the third built in Alberta</p>
+            </div>
+            <a id= "bookButton" href="reservation.html">Book now!</a>
         </div>
         <div id="localInfo">
-            <h3></h3>
+            <h3>Local Info</h3>
             <p></p>
             <div id="weather">
-                <span></span>
+                <h3>Weather</h3>
+                <span id="temp"></span>
+                <div id="forecast"></div>
             </div>
         </div>
 
@@ -65,6 +83,17 @@
 
 
     <footer>
-
+        <div>
+            <h4>Address</h4>
+            <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <p>templeinn@suites.com</p>
+            <p>240-045-7721</p>
+            <p>@2022 Bani</p>
+        </div>
+        <div class="socials">
+            <a href=""><img src="images/instagram.png"></a>
+            <a href=""><img src="images/facebook.png"></a>
+        </div>
     </footer>
+    <script src=""></script>
 </body>
