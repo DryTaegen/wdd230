@@ -31,44 +31,45 @@
 
 
     <main>
-        <form method="get" action="thankyou.html">
+        <form method="get" action="submitted.html">
             <fieldset>
-                <legend>Applicant Information</legend>
+                <legend>Booking</legend>
+                <label>Location*<select name="location" required>
+                    <option>--select--</option>
+                    <option value="calgary">Calgary Alberta</option>
+                    <option value="nauvoo">Nauvoo Illinois</option>
+                    <option value="oakland">Oakland California</option>
+                    <option value="winterQuarters">Winter Quarters Nebraska</option>
+                </select>
+                <label> First night of stay*: <input type="date" name="firstDate" required></label>
+                <label> Last night of stay*: <input type="date" name="lastDate" required></label>
+            </fieldset>
+            <fieldset>
+                <label>Room type* <select name="roomType" required>
+                    <option>--select--</option>
+                    <option value="single">Single bed bedroom</option>
+                    <option value="double">Two bed bedroom</option>
+                    <option value="family">Two bath two bedrooms</option>
+                    <option value="Large">Suite two bath two bed and kitchenette</option>
+                </select></label>
+                <label>Number of rooms* <input type="number" name="roomCount" required></select></label>
+            </fieldset>
+            <fieldset>
+                <legend>Personal information</legend>
                 <label>First Name* <input type="text" name="fname" required></label>
                 <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Phone <input type="tel" name="phone" required></label>
+                <label>Phone* <input type="tel" name="phone" required></label>
                 <label>E-mail* <input type="email" name="email" placeholder="person@abc.com" required></label>
             </fieldset>
             <fieldset>
-                <legend>Business Information</legend>
-                <label>Business Name* <input type="text" name="bname" required></label>
-                <label>Description <textarea  name="bdescription" placeholder="Brief discription of business"></textarea></label>
-                <label>Position Title <input type="text" name="title"></label>
+                <label>Are you a full-time temple missionary seeking long-term accommodations? <input type="checkbox" name="missionary" value="isMissionary"></label>
             </fieldset>
             <fieldset>
-                <legend>Membership Tier</legend>
-                    <div class="radioList">
-                        <div>Select a membership level</div>
-                        <div class="option">
-                            <label class="radioTier" id="tier1"><input type="radio" name="mlevel" value="tier 1">NP Membership </label>
-                            <div class="tierHover" id="hover1"><h4>Non profit Membership</h4><p>(non-profit organization) $0</p></div>
-                        </div>
-                        <div class="option">
-                            <label class="radioTier" id="tier2"><input type="radio" name="mlevel" value="tier 2">Bronze Membership </label>
-                            <div class="tierHover" id="hover2"><h4>Bronze Membership</h4><p>(Newsletter and advertising opportunities) $100/year</p></div>
-                        </div>
-                        <div class="option">
-                            <label class="radioTier" id="tier3"><input type="radio" name="mlevel" value="tier 3">Silver Membership </label>
-                            <div class="tierHover" id="hover3"><h4>Silver Membership</h4><p>(Bronze tier + access to our databases and monthly meet-and-greet) $300/year</p></div>
-                        </div>
-                        <div class="option">
-                            <label class="radioTier" id="tier4"><input type="radio" name="mlevel" value="tier 4">Gold Membership </label>
-                            <div class="tierHover" id="hover4"><h4>Gold Membership</h4><p>(non-profit organization) (Silver tier + full access to our assets, discounts, seminars, and exclusive golden events) $700/year</p></div>
-                        </div>
-                    </div>
+                <label>Notes or special accommodations: <textarea rows="5" cols="80"> Share with us any notes or accommodations that you would like for us to know for your visit.</textarea></label>
             </fieldset>
-            <input type="hidden" name="subdate" id="todayDate"/>
-            <input type="submit" value="Become A Member">
+            
+            
+            <input type="submit" value="Finish Booking">
 
         </form>
 

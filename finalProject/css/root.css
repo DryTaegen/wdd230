@@ -407,3 +407,43 @@ footer iframe {
     border: 1px solid;
 }
 
+/* application styling */
+form {
+    margin: 2% 7%;
+    color: var(--light-second-color);
+    background-color: var(--dark-main-color);
+    border: 7px solid var(--dark-second-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+form fieldset {
+    font-family: var(--paragraph-font);
+    border-color: var(--light-second-color);
+    background-color: var(--light-main-color);    
+}
+
+form fieldset input {
+    background-color: var(--white-color);
+    margin: 10px
+}
+
+form fieldset select {
+    margin: 5px;
+    border-color: var(--white-color);
+}
+form fieldset:nth-child(5) label{
+    display:flex;
+    flex-direction:column;
+}
+#submitMain {
+    text-align: center;
+    background-color: var(--light-main-color);
+    margin: 10%;
+    padding: 6% 10px;
+    border: 7px solid var(--dark-second-color);
+    border-radius: 15px;
+}
+form input {
+    margin-top: 20px;
+}
