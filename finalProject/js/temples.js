@@ -25,7 +25,8 @@ fetch(requestURL)
         let link = document.createElement("a");
         let templeClosure = document.createElement("ul");
         let name = document.createElement("h2");  
-
+        console.log(temple)
+        console.log(temple.services)
 
         for(let i =0; i <  temple.services.length; ++i) {
             let item = document.createElement(li);
