@@ -272,9 +272,51 @@ footer .socials {
 
 /* temple styling */
 
+#templeMain {
+    background-color: var(--light-second-color);
+}
+
 #templeCarousel{
     display: flex;
-    background-color: var(--light-main-color);
+    flex-direction: column;
+    background-color: var(--light-second-color);
+}
+
+
+
+#templeButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#templeButtons button {
+    background-color: var(--dark-main-color);
+    border: 1px solid var(--light-main-color);
+    color: var(--light-second-color);
+    padding: 10px 10.5%;
+    text-align: center;
+
+}
+
+.carousel {
+    display: grid;
+    grid-template-rows: 50px 550px .5fr;
+    background-color: var(--dark-main-color);
+    border: 7px solid var(--dark-second-color);
+    margin: 20px 10%;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.carousel img {
+    min-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    padding:0%
+}
+.carousel p {
+    margin: 10px 25%;
 }
 
 .hidden {

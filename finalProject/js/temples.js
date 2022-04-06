@@ -1,7 +1,9 @@
 const requestURL = "https://drytaegen.github.io/wdd230/finalProject/data/temples.json";
 const templeCarousel = document.querySelector("#templeCarousel")
 const button1 = document.querySelector("#button1")
-
+const button2 = document.querySelector("#button2")
+const button3 = document.querySelector("#button3")
+const button4 = document.querySelector("#button4")
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -25,14 +27,14 @@ fetch(requestURL)
         let name = document.createElement("h2");  
 
 
-        for (let i =0; i < service.length; i++) {
-            item = document.createElement(li);
-            item.textContent = service[i];
+        for(let i =0; i <  temple.services.length; ++i) {
+            let item = document.createElement(li);
+            item.textContent = temple.services[i];
             service.appendChild(item)
         }
-        for (let i =0; i <  templeClosure.length; i++) {
-            item = document.createElement(li);
-            item.textContent = templeClosure[i];
+        for (let i =0; i <  temple.templeClosure.length; ++i) {
+            let item = document.createElement(li);
+            item.textContent = temple.templeClosure[i];
             service.appendChild(item)
         }
 
@@ -41,7 +43,7 @@ fetch(requestURL)
         history.textContent = temple.history;
         ordinanceSchedule.textContent = temple.ordinanceSchedule;
         link.setAttribute("href", temple.link);
-        link.textContent = `Church of jesus Christ ${temple.Name}`;
+        link.textContent = `» Website: Church of jesus Christ ${temple.Name}`;
         phone.textContent = temple.phone;
         name.textContent = temple.Name;
         image.setAttribute('src', temple.Image);
@@ -59,9 +61,12 @@ fetch(requestURL)
         carousel.appendChild(name);
         carousel.appendChild(image);
         carousel.appendChild(templeInfo);
-        carousel.classList.add("Carousel");
+        carousel.classList.add("carousel");
         carousel.classList.add("hidden");
         carousel.classList.add(`${temple.id}`);
+        if (carousel.classList.contains("oakland")) {
+          carousel.classList.remove("hidden");
+        }
       
         templeCarousel.appendChild(carousel);
     }
@@ -70,9 +75,45 @@ fetch(requestURL)
 });
 
 
-button1.addEventListener("click", makeVisible);
+button1.addEventListener("click", makeVisible1);
+button2.addEventListener("click", makeVisible2);
+button3.addEventListener("click", makeVisible3);
+button4.addEventListener("click", makeVisible4);
 
+function makeVisible1() {
+  var toHide = document.querySelectorAll(".carousel");
+  for(let i =0; i <  toHide.length; ++i){ 
+    toHide[i].classList.add("hidden")
+  }
+  document.querySelector(".winterQuarters").classList.remove("hidden");
+  
+}
 
-function makeVisible() {
-  document.get
+function makeVisible2() {
+  var toHide = document.querySelectorAll(".carousel");
+  for(let i =0; i <  toHide.length; ++i) {
+    toHide[i].classList.add("hidden")
+  }
+    document.querySelector(".oakland").classList.remove("hidden");
+  
+}
+
+function makeVisible3() {
+  var toHide = document.querySelectorAll(".carousel");
+  for(let i =0; i <  toHide.length; ++i){
+    toHide[i].classList.add("hidden")
+  }
+  document.querySelector(".calgary").classList.remove("hidden");
+  
+}
+
+function makeVisible4() {
+  var toHide = document.querySelectorAll(".carousel");
+  console.log(toHide)
+  for(let i = 0; i <  toHide.length; ++i){
+    console.log(toHide[i])
+    toHide[i].classList.add("hidden")
+  }
+  document.querySelector(".nauvoo").classList.remove("hidden");
+  
 }
