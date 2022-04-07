@@ -1,7 +1,18 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 504px) {
 
+header {
+    width: 99%;
+}
+footer {
+    width: 100%;
 
-
+}
+footer .socials {
+    display: none;
+}
+footer iframe {
+    width: 30%
+}
 
 
 

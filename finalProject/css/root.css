@@ -60,22 +60,22 @@ body {
 
 
 header {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 3fr 1fr;
     background-color: var(--dark-main-color);
     width: 100%;
 }
 
-header div {
-    display: flex;
-
-}
 
 header img {
-    
+    grid-row: 1/2;
+    grid-column: 1/2; 
 }
 
 header h1 {
+    grid-row: 1;
+    grid-column: 3/6;
     color: var(--light-second-color);
     text-align: center;
     font-size: 50px;
@@ -83,6 +83,8 @@ header h1 {
 
 header .socials {
     display: flex;
+    grid-row: 1;
+    grid-column: 8/9;
     
 }
 
@@ -96,6 +98,8 @@ header .socials a {
 }
 
 nav {
+    grid-row: 2;
+    grid-column: 1/9;
     flex-shrink: 0;
 }
 
@@ -264,6 +268,15 @@ footer iframe {
     border: 7px solid var(--dark-second-color);
     border-radius: 15px;
     margin: 10px;
+}
+#todayData{
+    display: flex;
+    flex-direction: column;
+}
+#forecast div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 

@@ -18,7 +18,7 @@ fetch(weatherApi)
     conditionHead.textContent = "Today's condition";
     temp.textContent = jsObject.main.temp + " °F";
     condition.textContent = jsObject.weather[0].description;
-    humidity.textContent = jsObject.main.humidity;
+    humidity.textContent = jsObject.main.humidity+ "%";
     console.log(temp.textContent, condition.textContent, humidity.textContent)
     document.querySelector("#todayData").appendChild(tempHead)
     document.querySelector("#todayData").appendChild(temp)

@@ -7,26 +7,28 @@
     <meta name="description" content="Make reservations for the Temple inn and suites">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
     
 <body>
     <header>
-        <div>
-            <img src="images/templeInn.jpg" alt="Temple inn and suites logo">
-            <h1>Temple Inn & Suites</h1>    
-            <div class="socials">
-                <a href=""><img src="images/instagram.png" alt="Instagram logo"></a>
-                <a href=""><img src="images/facebook.png" alt="Facebook logo"></a>
-            </div>
+
+        <img src="images/templeInn.jpg" alt="Temple inn and suites logo">
+        <h1>Temple Inn & Suites</h1>    
+        <div class="socials">
+            <a href=""><img src="images/instagram.png" alt="Instagram logo"></a>
+            <a href=""><img src="images/facebook.png" alt="Facebook logo"></a>
         </div>
+
         <nav>
             <ul>
                 <li id=smallMenu><a href="#">☰</a></li>
-                <li><a class="active navItem navHidden" href="index.html">Home</a></li>
-                <li><a class="navItem navHidden" href="reservation.html">Reservations</a></li>
-                <li><a class="navItem navHidden" href="services.html">Services</a></li>
-                <li><a class="navItem navHidden" href="temple.html">Temples</a></li>
+                <li class="navItem navHidden"><a class="active" href="index.html">Home</a></li>
+                <li class="navItem navHidden"><a href="reservation.html">Reservations</a></li>
+                <li class="navItem navHidden"><a href="services.html">Services</a></li>
+                <li class="navItem navHidden"><a href="temple.html">Temples</a></li>
             </ul>
         </nav>
     </header>
@@ -67,7 +69,7 @@
                 <label>Are you a full-time temple missionary seeking long-term accommodations? <input type="checkbox" name="missionary" value="isMissionary"></label>
             </fieldset>
             <fieldset>
-                <label>Notes or special accommodations: <textarea rows="5" cols="80"> Share with us any notes or accommodations that you would like for us to know for your visit.</textarea></label>
+                <label>Notes or special accommodations: <textarea rows="5"> Share with us any notes or accommodations that you would like for us to know for your visit.</textarea></label>
             </fieldset>
             
             
@@ -94,4 +96,5 @@
             <a href=""><img src="images/facebook.png"></a>
         </div>
     </footer>
+    <script src="js/nav.js"></script>
 </body>
