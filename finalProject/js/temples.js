@@ -34,8 +34,8 @@ fetch(requestURL)
         let likeDiv = document.createElement("div");
         let likeTrue = document.createElement("img");
         let likeFalse = document.createElement("img");  
-        console.log(temple)
-        console.log(temple.services)
+        // console.log(temple)
+        // console.log(temple.services)
 
         for(let i =0; i <  temple.services.length; ++i) {
             let item = document.createElement("li");
@@ -48,14 +48,29 @@ fetch(requestURL)
             templeClosure.appendChild(item)
         }
 
-        likeDiv.setAttribute("id", "likeDiv")
-        likeTrue.setAttribute("src", "images/likeTrue.jpg");
-        likeTrue.setAttribute("alt","You liked this image");
-        likeTrue.setAttribute("class", "hiddenLike");
+        likeDiv.setAttribute("id", "likeDiv");
 
-        likeFalse.setAttribute("src", "images/likeFalse.jpg");
-        likeFalse.setAttribute("alt","You have not liked this image");
-        likeFalse.setAttribute("class", "displayLike");
+ 
+        likeDiv.addEventListener("click", toggleLike);
+
+        let liked = localStorage.getItem(`liked+${temple.id}`);
+        if(liked === null || liked === "false") {
+          likeTrue.setAttribute("src", "images/likeTrue.jpg");
+          likeTrue.setAttribute("alt","You liked this image");
+          likeTrue.setAttribute("class", "hiddenLike");
+
+          likeFalse.setAttribute("src", "images/likeFalse.jpg");
+          likeFalse.setAttribute("alt","You have not liked this image");
+          likeFalse.setAttribute("class", "displayLike");
+        } else if (liked === "true") {
+          likeTrue.setAttribute("src", "images/likeTrue.jpg");
+          likeTrue.setAttribute("alt","You liked this image");
+          likeTrue.setAttribute("class", "displayLike");
+
+          likeFalse.setAttribute("src", "images/likeFalse.jpg");
+          likeFalse.setAttribute("alt","You have not liked this image");
+          likeFalse.setAttribute("class", "hiddenLike");
+        }
 
         address.textContent = temple.address;
         history.textContent = temple.history;
@@ -96,6 +111,9 @@ fetch(requestURL)
         carousel.classList.add("carousel");
         carousel.classList.add("hidden");
         carousel.classList.add(`${temple.id}`);
+
+        carousel.id = temple.id;
+
         if (carousel.classList.contains("oakland")) {
           carousel.classList.remove("hidden");
         }
@@ -150,3 +168,22 @@ function makeVisible4() {
   
 }
 
+
+function toggleLike(event) {
+  let id = event.target.closest(".carousel").id;
+
+  let toHide = document.querySelector("div.carousel:not(.hidden) .displayLike");
+  let toShow = document.querySelector("div.carousel:not(.hidden) .hiddenLike");
+
+  toShow.classList.remove("hiddenLike");
+  toShow.classList.add("displayLike");
+  toHide.classList.add("hiddenLike");
+  toHide.classList.remove("displayLike");
+
+  let liked = localStorage.getItem(`liked+${id}`);
+  if(liked === null || liked === "false") {
+    localStorage.setItem(`liked+${id}`, "true")
+  } else if (liked === "true") {
+    localStorage.setItem(`liked+${id}`, "false")
+  }
+}

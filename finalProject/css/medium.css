@@ -1,0 +1,32 @@
+@media only screen and (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    .navHidden {
+        display: none;
+    }
+
+    #smallMenu {
+        display: block;
+        color: var(--light-second-color);
+        width: 900%;
+    }
+
+
+
+    #indexMain {
+        display: flex;
+        flex-direction:column;
+    }
+}

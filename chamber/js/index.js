@@ -150,6 +150,6 @@ if (lastDate == 0) {
 localStorage.setItem("visitStamp", todayDate);
 days.textContent = (change);
 
-document.querySelector("#todayDate").value = currentDate;
+    document.querySelector("#todayDate").value = currentDate;
 
 
