@@ -38,32 +38,32 @@
         <form method="get" action="submitted.html">
             <fieldset>
                 <legend>Booking</legend>
-                <label>Location*<select name="location" required>
+                <label for="location">Location*<select id="location"name="location" required>
                     <option>--select--</option>
                     <option value="calgary">Calgary Alberta</option>
                     <option value="nauvoo">Nauvoo Illinois</option>
                     <option value="oakland">Oakland California</option>
                     <option value="winterQuarters">Winter Quarters Nebraska</option>
                 </select>
-                <label> First night of stay*: <input type="date" name="firstDate" required></label>
-                <label> Last night of stay*: <input type="date" name="lastDate" required></label>
+                <label for="firstDate"> First night of stay*: <input id="firstDate" type="date" name="firstDate" required></label>
+                <label for="lastDate"> Last night of stay*: <input id="lastDate" type="date" name="lastDate" required></label>
             </fieldset>
             <fieldset>
-                <label>Room type* <select name="roomType" required>
+                <label for="roomType">Room type* <select id="roomType" name="roomType" required>
                     <option>--select--</option>
                     <option value="single">Single bed bedroom</option>
                     <option value="double">Two bed bedroom</option>
                     <option value="family">Two bath two bedrooms</option>
                     <option value="Large">Suite two bath two bed and kitchenette</option>
                 </select></label>
-                <label>Number of rooms* <input type="number" name="roomCount" required></select></label>
+                <label for="roomCount">Number of rooms* <input id="roomCount" type="number" name="roomCount" required></select></label>
             </fieldset>
             <fieldset>
                 <legend>Personal information</legend>
-                <label>First Name* <input type="text" name="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Phone* <input type="tel" name="phone" required></label>
-                <label>E-mail* <input type="email" name="email" placeholder="person@abc.com" required></label>
+                <label for="fname">First Name* <input id="fname" type="text" name="fname" required></label>
+                <label for="lname">Last Name* <input id="'lname" type="text" name="lname" required></label>
+                <label for="phone">Phone* <input id="phone" type="tel" name="phone" required></label>
+                <label for="email">E-mail* <input id="email" type="email" name="email" placeholder="person@abc.com" required></label>
             </fieldset>
             <fieldset>
                 <label>Are you a full-time temple missionary seeking long-term accommodations? <input type="checkbox" name="missionary" value="isMissionary"></label>
