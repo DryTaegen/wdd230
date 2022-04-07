@@ -96,24 +96,20 @@ header .socials a {
 }
 
 nav {
+    flex-shrink: 0;
 }
 
 nav ul {
+    margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
-    height: 35px;
 }
 
-/*nav ul li {
-    width: 100%;
-}*/
-nav ul li a{
-    text-align: center;
+nav ul li {
+    flex-shrink: 0;
     background-color: var(--light-main-color);
-    width: 100%;
     padding: 10px 35px;
-
 }
 
 
@@ -153,8 +149,12 @@ footer iframe {
     grid-column: 1/4;
     grid-row: 1.2;
     background-color: var(--dark-second-color);
+
 }
 
+#weatherAlert p {
+    color: var(--white-color);
+}
 #reviews {
     grid-column: 1/2;
     grid-row: 2/4;

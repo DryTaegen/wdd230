@@ -25,17 +25,17 @@
         <nav>
             <ul>
                 <li id=smallMenu><a href="#">☰</a></li>
-                <li><a class="active navItem navHidden" href="index.html">Home</a></li>
-                <li><a class="navItem navHidden" href="reservation.html">Reservations</a></li>
-                <li><a class="navItem navHidden" href="services.html">Services</a></li>
-                <li><a class="navItem navHidden" href="temple.html">Temples</a></li>
+                <li class="navItem navHidden"><a class="active" href="index.html">Home</a></li>
+                <li class="navItem navHidden"><a href="reservation.html">Reservations</a></li>
+                <li class="navItem navHidden"><a href="services.html">Services</a></li>
+                <li class="navItem navHidden"><a href="temple.html">Temples</a></li>
             </ul>
         </nav>
     </header>
 
 
     <main id="indexMain">
-        <div id="weatherAlert"></div>
+        <div id="weatherAlert"><p>A weather alert has been issued in the area. Check the local news for more information.</p></div>
         <div id="reviews">
             <h3>Reviews</h3>
             <div class="review">
@@ -82,9 +82,7 @@
             <p></p>
             <div id="weather">
                 <h3>Weather</h3>
-                <span id="temp"></span>
-                <span id="condition"></span>
-                <span id="humidity"></span>
+                <div id="todayData"></div>
                 <div id="forecast"></div>
             </div>
         </div>
